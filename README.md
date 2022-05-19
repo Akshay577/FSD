@@ -1,2 +1,2 @@
 # FSD
-Posting daily assignments in this repository
+Will be posting daily assignments in this repository.
