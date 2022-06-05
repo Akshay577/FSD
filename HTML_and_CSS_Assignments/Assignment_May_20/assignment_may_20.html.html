@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Survey</title>
+    <!-- Using internal css for text color and for button properties-->
+    <style>
+        .text {
+            color: white;
+            margin-left: 10px;
+        }
+        .button {
+            width: 740px;margin-left: 30px;margin-right: 30px; margin-bottom: 30px; 
+            background-color: rgba(27, 189, 27, 0.92);
+            border-width: 0px; 
+            color: aliceblue; 
+            padding: 8px 0px; 
+            box-shadow: 0px 0px 2px 2px rgba(27, 189, 27, 0.92); 
+            font-size: 20px;
+        }
+        .button:hover {
+            background-color: rgba(23, 118, 23, 0.92);
+        }
+    </style>
+</head>
+<!--Adding background image in the body section-->
+<body style="background-image: url('tree2.jpg'); background-repeat: no-repeat; background-attachment: fixed;" >
+    <div style="background-color: rgba(15, 26, 7, 0.668); width: 800px; margin-left: auto;margin-right: auto;">
+        <!--Adding image and setting the float property-->
+        <img src="treelogo.png" alt="Tree logo" style="float:left; margin: 15px 0px 0px 10px; width: 60px;">
+        <br><br><br>
+        <h3 style="text-align: center; color: white; font-size: 30px; margin-bottom: 10px;">Tree Survey Form</h3>
+        <p style="text-align: center; color: white;">A survey form on the health of the environment</p>
+        <br>
+        <!-- Form -->
+        <form action="">
+            <label for="name" class="text">Name:</label><br>
+            <input type="text" placeholder=" Enter your name e.g. Akshay" required style="width: 770px;margin-left: 10px;margin-right: 15px; padding: 3px 0px;"><br><br>
+            <label for="mail" class="text">Email:</label><br>
+            <input type="email" placeholder=" xyz@someplace.com" required style="width: 770px;margin-left: 10px;margin-right: 15px; padding: 3px 0px;"><br><br>
+            <label for="age" class="text">Age(optioinal):</label><br>
+            <input type="number" min="06" max="120" placeholder=" 24" style="width: 770px;margin-left: 10px;margin-right: 15px; padding: 3px 0px;"><br>
+           
+            <p class="text" style="margin-bottom: 5px;">Select continent of residence:</p>
+            <!--Using select element to create a drop-down list-->
+            <select name="continent" required style="width: 775px;margin-left: 10px;margin-right: 15px; padding: 3px 0px;">
+                <option value="asia"> Asia</option>
+                <option value="asia"> Europe</option>
+                <option value="asia"> Australia</option>
+                <option value="asia"> North America</option>
+                <option value="asia"> South America</option>
+                <option value="asia"> Africa</option>
+            </select>
+
+            <h3 class="text">Select your gender</h3>
+            <!--Creating radio buttons-->
+            <input type="radio" name="male" id="gender" style="margin-left: 10px;">
+            <label for="gender" class="text">Male</label><br>
+            <input type="radio" name="female" id="gender" style="margin-left: 10px;">
+            <label for="gender" class="text">Female</label><br>
+            <input type="radio" name="notsay" id="gender" style="margin-left: 10px;">
+            <label for="gender" class="text">Rather not say</label><br><br>
+
+            <!--Creating checkbox-->
+            <h3 class="text">Please select atleast one of the options below:</h3>
+            <input type="checkbox" name="likes" id="text" style="margin-left: 10px;">
+            <label for="" class="text">I have planted a tree or any other plant</label><br><br>
+            <input type="checkbox" name="likes" id="text" style="margin-left: 10px;">
+            <label for="" class="text">I take part in community service for the environment</label><br><br>
+            <input type="checkbox" name="likes" id="text" style="margin-left: 10px;">
+            <label for="" class="text">I promise to plant more from now on</label><br><br>
+            <h3 class="text" style="text-align: center;">Any comments or suggestions</h3>
+
+            <!--Creating text area and setting the resize property to vertical for vertical resizing-->
+            <textarea name="comments" id="" cols="100" rows="10" placeholder="Comments/Suggestions..." style="width: 775px;margin-left: 10px;margin-right: 10px; resize: vertical;"></textarea><br><br>
+            <!--Button-->
+            <button class="button" type="submit" >Submit</button>
+        </form>
+        <p style="text-align: center;margin-bottom:10px; color: white;" >Copyright by Open tree foundation &copy; </p>
+        <br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<body>
+    <!-- Using table to create two column layout-->
+    <table style="background-color: rgb(26, 141, 213); border-spacing: 20px 20px;">
+        <tr>
+            <!-- First column is kept blank -->
+            <td style="width: 200px;"></td>
+            <!-- Added form on second column-->
+            <td style="width: 250px;background-color: rgb(231, 228, 228); padding: 0px 20px 20px 20px;">
+                <form action="">
+                    <p style="color: rgb(26, 141, 213);font-family: Verdana;font-size: large;">Contact Us</p>
+                    <input type="text" placeholder="Full name" name="username" style="width: 250px;"> 
+                    <br><br>
+                    <input type="email" placeholder="Email" name="email"  style="width: 250px;">
+                    <br><br>
+                    <input type="number" placeholder="Phone number" name="phone" min="1111111111" max="9999999999" style="width: 250px;">
+                    <br><br>
+                    <input type="url" placeholder="Website" name="website"  style="width: 250px;">
+                    <br><br>
+                    <label for="message" style="font-family: Verdana; color:rgb(112, 114, 115); font-size: small;">Message</label>
+                    <br><br>
+                    <textarea name="message" id="message" cols="27" rows="5"  style="width: 251px;"></textarea>
+                    <br><br>
+                    <button type="submit" style="color: rgb(237, 240, 241);background-color: rgb(26, 141, 213); border:none; width:256px;padding: 5px 0px; text-align: center;">Submit</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    
+
+
+
+</body>
+</html>

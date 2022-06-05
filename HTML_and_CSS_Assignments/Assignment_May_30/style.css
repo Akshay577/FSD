@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 170%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.825);
+    height: 50px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+ul {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: azure;
+}
+li:hover {
+    background-color: black;
+}
+
+.nav-link {
+    float: right;
+    padding: 10px 10px;
+}
+.my {
+    display: flex;
+    float: left;
+    padding-top: 2px;
+    /* padding-bottom: -4px; */
+}
+
+.my-img {
+    display: flex;
+    margin: 0px;
+    padding-right: 10px;
+}
+.website-title {
+    background-image: url('bg.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin: 0;
+}
+
+.btn {
+    background-color: transparent;
+    padding: 20px;
+    margin: 10px;
+    font-size: 25px;
+    border-color: aliceblue;
+}
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.671);
+}
+.website-title {
+    text-align: center;
+
+}
+.details {
+    padding: 120px;
+}
+div > div {
+    color: azure;
+    
+}
+.key-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    background-color: rgb(228, 229, 229);
+  }
+  .key-features > div {
+    background-color:  rgb(228, 229, 229);
+    padding: 50px;
+    color: dimgray;
+  }
+  .key-features > div >h3 {
+      color: black;
+  }
+.key, .key2 {
+    font-size: 50px;
+}
+
+.key-features2 {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    justify-content: space-around;
+    background-color: rgb(221, 199, 199);
+  }
+  .key-features2 > div {
+    background-color: rgb(221, 199, 199);
+    padding: 50px;
+    color: dimgray;
+  }
+  
+  .people-say {
+      background-color: aliceblue;
+      color: black;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+  .review {
+      display: flex;
+  }
+  h4, h4 + p {
+      margin:10px;
+      color: black;
+  }
+.footer {
+    background-color: rgba(0, 0, 0, 0.651);
+    
+}
+.footer-content {
+    padding: 20px;
+    text-align: center;
+}
+img {
+    border-radius: 5px;
+}
