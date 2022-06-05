@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,24,126,1) 50%, rgba(0,212,255,1) 100%);    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 30px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Assignment</h1>
+    <p>Open Console to see the output</p>
+    <script>
+
+//Goto line number 100 to try different parameter for the function
+
+// Assignment problem
+// Create an object = contacts [{}, {}, {}, {}, {}]
+// object property = firstName:'', lastName: '', phone: number, likes:['','','']
+// crate function, take 2 parameters
+// 1st parameter for firstName, 2nd parameter is for property
+// if the firstName exists in object then find if the provided property exists for the given firstName
+// if valid name and valid property then return value of the property
+// if valid naem but not valid property then return no such property
+// if name not valid then return no such contact
+
+// Creating objects in an array
+const contacts = [{
+    firstName: 'Bobby',
+    lastName: 'Fischer',
+    phone: 1,
+    likes: ['abc','xyx']
+}, {
+    firstName: 'Garry',
+    lastName: 'Kasparov',
+    phone: 12,
+    likes: ['abc','xyx']
+}, {
+    firstName: 'Anatoly',
+    lastName: 'Karpov',
+    phone: 123,
+    likes: ['abc','xyx']
+}, {
+    firstName: 'Mikhail',
+    lastName: 'Tal',
+    phone: 1234,    
+    likes: ['abc','xyx']
+}, {
+    firstName: 'Vishwanathan',
+    lastName: 'Anand',
+    phone: 1235,
+    likes: ['abc','xyx']
+}]
+
+// writing a function to fond the match for the given property in the object
+function find(first,property) {
+// traversing all the objects in an array
+let check=0
+    for(let i=0; i<contacts.length; i++) {
+
+// Checking if the given first name exists in the object
+        if(contacts[i].firstName == first) {
+            console.log('First name: ',contacts[i].firstName)
+            check =1
+// Checking if the given property exists for that first name
+            if(contacts[i].hasOwnProperty(property)) {
+                console.log(`Value of ${property} property for the given First Name is: `,contacts[i][property])  
+                break
+            } else {
+                console.log("Given property doesn't exists")
+            }
+        }      
+    }
+// To check if the given first name doesn't exists in the object
+    if(check == 0) {
+        console.log('First Name does not exist')
+    }
+}
+// Calling the function
+// 1st Parameter is the first name and the 2nd is property
+find('Vishwanathan', 'phone')
+    </script>
+</body>
+</html>
